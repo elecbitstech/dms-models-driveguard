@@ -1,8 +1,5 @@
 # dms-models
 
-Model artefacts for the i.MX93 Driver Monitoring System fleet.
-Contents mirror `/opt/dms/downloads/` on reference device **C-00006**, pulled 2026-08-18.
-
 Raw URL form:
 
 ```
