@@ -6,7 +6,7 @@ Contents mirror `/opt/dms/downloads/` on reference device **C-00006**, pulled 20
 Raw URL form:
 
 ```
-https://raw.githubusercontent.com/elecbitstech/dms-models/main/<filename>
+https://raw.githubusercontent.com/elecbitstech/dms-models-driveguard/main/<filename>
 ```
 
 ## Why the hashes matter
@@ -68,6 +68,6 @@ ANCHORS_DAY_V2 = [23, 21, 52, 15, 45, 33, 34, 58, 56, 73, 104, 67]
 ```
 
 The runtime decodes `w = exp(raw) * anchor`, so a stale anchor list yields
-confidently-scored boxes of the wrong size — which reads as an accuracy problem,
+confidently-scored boxes of the wrong size â€” which reads as an accuracy problem,
 not a configuration one.
 
