@@ -21,6 +21,7 @@ The Yocto recipe `dms-models.bb` additionally pins **sha256** for build-time fet
 | file | bytes | sha1 | sha256 (first 16) | model |
 |---|---|---|---|---|
 | `eye_state_int8.tflite` | 16880 | `6136bca333651f2df493bb72d129316b2aca0fc5` | `5cbaa188cba3de3d` | IR eye-state classifier |
+| `facenet_int_quantized.tflite` | 23848680 | `a64cc9df1293b8e7efce03402691a4123350df5a` | `6ee9fcae748b26b8` | FaceNet face embedder (driver recognition), 128-d |
 | `face_detection_ptq.tflite` | 131248 | `8436d74058d81cfeb63986fbc835274907a028ea` | `b5bad49c265c451c` | NXP / MediaPipe BlazeFace, int8 |
 | `face_landmark_ptq.tflite` | 653960 | `e5e2ebd15860a48de9fc9063a1819e20c6d82fd6` | `7d12ff9cacaa5059` | NXP / MediaPipe FaceMesh 468-pt |
 | `iris_landmark_ptq.tflite` | 735048 | `dfb3e5dbad7693399bebb42e76ac40ae554854f5` | `c3b187caa1f8fca2` | NXP / MediaPipe iris |
@@ -37,6 +38,7 @@ a board silently falls back to CPU. Verify one is genuine with `grep -ac ethos-u
 
 | file | bytes | sha1 |
 |---|---|---|
+| `facenet_int_quantized_vela.tflite` | 21213744 | `6d7dd5cd6e08d7faf7379e939769653c836b7417` |
 | `face_detection_ptq_vela.tflite` | 181216 | `e42ee64358bc2230e7ecdec1e193e696234e1cc9` |
 | `face_landmark_ptq_vela.tflite` | 672800 | `ec808074714bfbf68a387fbdbf0cf52c80ba9ec6` |
 | `iris_landmark_ptq_vela.tflite` | 713920 | `1c9f946d31c48167d502465b51bad85c967af0f9` |
